@@ -81,7 +81,7 @@ export default function About() {
 
             <p>I’m also a long-time volunteer for <a href="https://www.iowaabi.org/business-horizons/">Iowa Business Horizons</a>, a week-long summer program for high school students interested in business and entrepreneurship (that I attended as a student in 1997). As committee chair for Iowa Business Horizons, I also serve on the board for the Iowa Association of Business and Industry Foundation.</p>
 
-            <p>I want to continue helping good people do great things. <a href="/hire-me">Please reach out</a> if you are interested in working together.</p>
+            <p>I want to continue helping good people do great things. <Link legacyBehavior href="/hire-me"><a>Please reach out</a></Link> if you are interested in working together.</p>
             </div>
           </div>
           <div className="lg:pl-20">
