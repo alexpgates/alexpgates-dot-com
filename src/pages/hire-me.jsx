@@ -46,23 +46,15 @@ export default function HireMe() {
                 />
               </div>
             </div>
-            <div className="lg:order-first lg:row-span-2">
+            <div className="lg:order-first lg:row-span-2 prose">
               <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                 Let’s work together.
               </h1>
               <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-                <p>
-
-                </p>
-                <p>
-
-                </p>
-                <p>
-
-                </p>
-                <p>
-
-                </p>
+                <p>Are you in need of a reliable and experienced web developer and tech advocate to help you build or improve your business or non-profit organization’s online presence? As a freelance web developer and technology consultant with over 26 years of experience, I have the skills and expertise to deliver high-quality software solutions that meet your needs.</p>
+                <p>I specialize in building and maintaining custom web applications with technologies including PHP, Laravel, and WordPress and have a strong track record of success working with clients of all technical backgrounds. In addition to my technical skills, I am an effective communicator and strive to be empathetic and approachable when working with clients.</p>
+                <p>Whether you are a seasoned entrepreneur or just starting out, I am here to help you navigate the world of technology and make informed decisions about how it can benefit your business or organization.</p>
+                <p>If you are interested in working with me on your project, I would love to learn more about your needs and goals. Let’s discuss how we can collaborate to build something great.</p>
               </div>
             </div>
             <div className="lg:pl-20">
