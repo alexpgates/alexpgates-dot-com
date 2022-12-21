@@ -59,13 +59,13 @@ export default function About() {
 
             <p>As a freelance web developer and technology consultant with over 26 years of experience building for the web, I am focused on creating software that helps good people do great things.</p>
 
-            <p>My upbringing in Iowa was a blend of small-town values and leading-edge technology, beginning with a <a class="underline" target="_blank" href="https://en.wikipedia.org/wiki/Commodore_64">Commodore 64</a> and followed by every iteration of computer and internet technology along the way - from 9600 baud dial-up to 28.8 to 56k, 3 1/2” floppies, zip drives, CD burners, and more.</p>
+            <p>My upbringing in Iowa was a blend of small-town values and leading-edge technology, beginning with a <a class="underline" href="https://en.wikipedia.org/wiki/Commodore_64">Commodore 64</a> and followed by every iteration of computer and internet technology along the way - from 9600 baud dial-up to 28.8 to 56k, 3 1/2” floppies, zip drives, CD burners, and more.</p>
 
             <p>I began writing HTML in 1996 when I was 14 years old and grew a small business helping people in my community connect to the internet and learn how to send and receive email.</p>
 
             <p>As a foreign exchange student in Denmark in 1999, I learned how to build Flash websites and games at Odense Tekniske College.</p>
 
-            <p>Upon returning to the United States, I enrolled at the <a class="underline" target="_blank" href="https://uni.edu/">University of Northern Iowa</a> where I studied business, social and behavioral sciences, humanities, and fine arts, including a study abroad in St. Petersburg Russia focused on photography and Russian history.</p>
+            <p>Upon returning to the United States, I enrolled at the <a class="underline" href="https://uni.edu/">University of Northern Iowa</a> where I studied business, social and behavioral sciences, humanities, and fine arts, including a study abroad in St. Petersburg Russia focused on photography and Russian history.</p>
 
             <p>My professional journey began as a front-end and back-end developer at a small publishing company in Eastern Iowa where I built a PHP application that allowed customers to design fundraising cookbooks online, invite collaborators to submit recipes, and place orders.</p>
 
@@ -73,13 +73,13 @@ export default function About() {
 
             <p>In 2013, What Cheer joined Pack, a social network startup for people who love dogs. While at Pack, I built custom email marketing software that delivered over 1.6 million personalized email newsletters in over 3,800 campaigns.</p>
 
-            <p>As a freelance consultant, I have helped a variety of businesses and non-profits use technology wisely to achieve their goals. For example, I built a large WordPress Multisite network for <a class="underline" target="_blank" href="https://www.techstars.com/communities/startup-weekend">Startup Weekend</a> and a custom scores and statistics API for <a class="underline" target="_blank" href="https://d1baseball.com">D1Baseball.com</a> that integrated with their WordPress website.</p>
+            <p>As a freelance consultant, I have helped a variety of businesses and non-profits use technology wisely to achieve their goals. For example, I built a large WordPress Multisite network for <a class="underline" href="https://www.techstars.com/communities/startup-weekend">Startup Weekend</a> and a custom scores and statistics API for <a class="underline" href="https://d1baseball.com">D1Baseball.com</a> that integrated with their WordPress website.</p>
 
-            <p>As a consultant (and later the second full-time employee) I developed the complete technology infrastructure (including a customer-facing website, subscription management, customer support tools, and custom order fulfillment) for <a target="_blank" href="https://petfriendlybox.com">PetFriendly</a>, a subscription-based e-commerce pet-wellness company.</p>
+            <p>As a consultant (and later the second full-time employee) I developed the complete technology infrastructure (including a customer-facing website, subscription management, customer support tools, and custom order fulfillment) for <a href="https://petfriendlybox.com">PetFriendly</a>, a subscription-based e-commerce pet-wellness company.</p>
 
             <p>In addition to my professional work, I have a strong commitment to volunteering and giving back to my community. As a certified Raspberry Pi Educator, I have helped hundreds of Omaha Public Schools students write their first line of code and fall in love with computer programming and STEAM-focused approaches to problem-solving.</p>
 
-            <p>I’m also a long-time volunteer for <a target="_blank" href="https://www.iowaabi.org/business-horizons/">Iowa Business Horizons</a>, a week-long summer program for high school students interested in business and entrepreneurship (that I attended as a student in 1997). As committee chair for Iowa Business Horizons, I also serve on the board for the Iowa Association of Business and Industry Foundation.</p>
+            <p>I’m also a long-time volunteer for <a href="https://www.iowaabi.org/business-horizons/">Iowa Business Horizons</a>, a week-long summer program for high school students interested in business and entrepreneurship (that I attended as a student in 1997). As committee chair for Iowa Business Horizons, I also serve on the board for the Iowa Association of Business and Industry Foundation.</p>
 
             <p>I want to continue helping good people do great things. <a href="/hire-me">Please reach out</a> if you are interested in working together.</p>
             </div>
