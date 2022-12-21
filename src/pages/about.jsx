@@ -75,7 +75,7 @@ export default function About() {
 
             <p>As a freelance consultant, I have helped a variety of businesses and non-profits use technology wisely to achieve their goals. For example, I built a large WordPress Multisite network for <a class="underline" target="_blank" href="https://www.techstars.com/communities/startup-weekend">Startup Weekend</a> and a custom scores and statistics API for <a class="underline" target="_blank" href="https://d1baseball.com">D1Baseball.com</a> that integrated with their WordPress website.</p>
 
-            <p>As a consultant (and later the second full-time employee) I developed the complete technology infrastructure (including a customer-facing website, subscription management, customer support tools, and custom order fulfillment) for <a target="_blank" rel="nofollow" href="https://petfriendlybox.com">PetFriendly</a>, a subscription-based e-commerce pet-wellness company.</p>
+            <p>As a consultant (and later the second full-time employee) I developed the complete technology infrastructure (including a customer-facing website, subscription management, customer support tools, and custom order fulfillment) for <a target="_blank" href="https://petfriendlybox.com">PetFriendly</a>, a subscription-based e-commerce pet-wellness company.</p>
 
             <p>In addition to my professional work, I have a strong commitment to volunteering and giving back to my community. As a certified Raspberry Pi Educator, I have helped hundreds of Omaha Public Schools students write their first line of code and fall in love with computer programming and STEAM-focused approaches to problem-solving.</p>
 
