@@ -40,7 +40,8 @@ export default function HireMe() {
               <div className="max-w-xs px-2.5 lg:max-w-none">
                 <Image
                   src={portraitImage}
-                  alt=""
+                  alt="Alex's Headshot"
+                  quality="90"
                   sizes="(min-width: 1024px) 32rem, 20rem"
                   className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
                 />
