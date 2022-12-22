@@ -45,7 +45,7 @@ export default function About() {
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <Image
                 src={portraitImage}
-                alt=""
+                alt="Alex's Headshot"
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square hover:rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
@@ -59,13 +59,13 @@ export default function About() {
 
             <p>As a freelance web developer and technology consultant with over 26 years of experience building for the web, I am focused on creating software that helps good people do great things.</p>
 
-            <p>My upbringing in Iowa was a blend of small-town values and leading-edge technology, beginning with a <a class="underline" href="https://en.wikipedia.org/wiki/Commodore_64">Commodore 64</a> and followed by every iteration of computer and internet technology along the way - from 9600 baud dial-up to 28.8 to 56k, 3 1/2” floppies, zip drives, CD burners, and more.</p>
+            <p>My upbringing in Iowa was a blend of small-town values and leading-edge technology, beginning with a <a className="underline" href="https://en.wikipedia.org/wiki/Commodore_64">Commodore 64</a> and followed by every iteration of computer and internet technology along the way - from 9600 baud dial-up to 28.8 to 56k, 3 1/2” floppies, zip drives, CD burners, and more.</p>
 
             <p>I began writing HTML in 1996 when I was 14 years old and grew a small business helping people in my community connect to the internet and learn how to send and receive email.</p>
 
             <p>As a foreign exchange student in Denmark in 1999, I learned how to build Flash websites and games at Odense Tekniske College.</p>
 
-            <p>Upon returning to the United States, I enrolled at the <a class="underline" href="https://uni.edu/">University of Northern Iowa</a> where I studied business, social and behavioral sciences, humanities, and fine arts, including a study abroad in St. Petersburg Russia focused on photography and Russian history.</p>
+            <p>Upon returning to the United States, I enrolled at the <a className="underline" href="https://uni.edu/">University of Northern Iowa</a> where I studied business, social and behavioral sciences, humanities, and fine arts, including a study abroad in St. Petersburg Russia focused on photography and Russian history.</p>
 
             <p>My professional journey began as a front-end and back-end developer at a small publishing company in Eastern Iowa where I built a PHP application that allowed customers to design fundraising cookbooks online, invite collaborators to submit recipes, and place orders.</p>
 
@@ -73,7 +73,7 @@ export default function About() {
 
             <p>In 2013, What Cheer joined Pack, a social network startup for people who love dogs. While at Pack, I built custom email marketing software that delivered over 1.6 million personalized email newsletters in over 3,800 campaigns.</p>
 
-            <p>As a freelance consultant, I have helped a variety of businesses and non-profits use technology wisely to achieve their goals. For example, I built a large WordPress Multisite network for <a class="underline" href="https://www.techstars.com/communities/startup-weekend">Startup Weekend</a> and a custom scores and statistics API for <a class="underline" href="https://d1baseball.com">D1Baseball.com</a> that integrated with their WordPress website.</p>
+            <p>As a freelance consultant, I have helped a variety of businesses and non-profits use technology wisely to achieve their goals. For example, I built a large WordPress Multisite network for <a className="underline" href="https://www.techstars.com/communities/startup-weekend">Startup Weekend</a> and a custom scores and statistics API for <a className="underline" href="https://d1baseball.com">D1Baseball.com</a> that integrated with their WordPress website.</p>
 
             <p>As a consultant (and later the second full-time employee) I developed the complete technology infrastructure (including a customer-facing website, subscription management, customer support tools, and custom order fulfillment) for <a href="https://petfriendlybox.com">PetFriendly</a>, a subscription-based e-commerce pet-wellness company.</p>
 
