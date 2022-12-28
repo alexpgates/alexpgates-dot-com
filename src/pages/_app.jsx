@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react'
 
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import { Baloo } from '@/components/Baloo'
 
 import '@/styles/tailwind.css'
 import 'focus-visible'
@@ -33,7 +32,6 @@ export default function App({ Component, pageProps, router }) {
           <Component previousPathname={previousPathname} {...pageProps} />
         </main>
         <Footer />
-        <Baloo />
       </div>
     </>
   )
