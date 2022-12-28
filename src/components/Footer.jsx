@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import baloo from '@/images/baloo.png'
 
 import { Container } from '@/components/Container'
 
@@ -13,9 +15,24 @@ function NavLink({ href, children }) {
   )
 }
 
+function Baloo() {
+    return (
+        <div onClick={toggleBaloo} id="baloo-container" className="invisible z-40 fixed mt-6 inset-0 grid place-items-center h-screen">
+        <div id="sneaky-baloo" className="absolute top-full ease-in-out transition-full duration-1000">
+        <Image
+                src={baloo}
+                alt=""
+                sizes="(min-width: 640px) 18rem, 11rem"
+                className=""
+            />
+        </div>
+        </div>
+    )
+}
+
 function toggleBaloo() {
     document.getElementById('baloo-container').classList.toggle('invisible');
-    document.getElementById('sneaky-baloo').classList.toggle('top-full');
+    document.getElementById('sneaky-baloo').classList.toggle('top-0');
 }
 
 export function Footer() {
@@ -29,6 +46,7 @@ export function Footer() {
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/articles">Articles</NavLink>
                 <NavLink href="/hire-me">Hire Me</NavLink>
+                <a onClick={toggleBaloo} className="transition cursor-pointer hover:text-cyan-500 dark:hover:text-cyan-400">Pspspspsp!</a>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Alex P. Gates. All rights reserved.
@@ -36,6 +54,7 @@ export function Footer() {
             </div>
           </Container.Inner>
         </div>
+        <Baloo />
       </Container.Outer>
     </footer>
   )
