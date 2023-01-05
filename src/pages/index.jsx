@@ -22,6 +22,7 @@ import logoAlexPGates from '@/images/logos/alex.png'
 import logoBh from '@/images/logos/bh.png'
 import logoWfs from '@/images/logos/wfs.png'
 import logoAbif from '@/images/logos/abif.jpg'
+import logoRPi from '@/images/logos/rpi.svg'
 import logoPack from '@/images/logos/pack.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -210,13 +211,23 @@ function Community() {
             dateTime: new Date().getFullYear(),
           },
       },
+      {
+        name: 'Raspberry Pi Educator',
+        title: 'Certified',
+        logo: logoRPi,
+        start: '2019',
+        end: {
+            label: 'Present',
+            dateTime: new Date().getFullYear(),
+          },
+      },
     ]
 
     return (
       <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
         <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
           <CommunityIcon className="h-6 w-6 flex-none" />
-          <span className="ml-3">Community Volunteer</span>
+          <span className="ml-3">Community</span>
         </h2>
         <ol className="mt-6 space-y-4">
           {organizations.map((org, roleIndex) => (
