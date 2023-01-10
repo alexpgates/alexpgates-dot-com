@@ -28,7 +28,7 @@ export default function Davinci() {
   return (
     <>
       <Head>
-        <title>da Vinci's Workshop</title>
+        <title>da Vinci’s Workshop</title>
         <meta
           name="description"
           content="Sort of unorganized (but improving) notes for my enrichment class"
