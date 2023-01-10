@@ -6,15 +6,15 @@ import { getAllArticles } from './getAllArticles'
 
 export async function generateRssFeed() {
   let articles = await getAllArticles()
-  let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
+  let siteUrl = 'https://www.alexpgates.com'
   let author = {
-    name: 'Spencer Sharp',
-    email: 'spencer@planetaria.tech',
+    name: 'Alex P. Gates',
+    email: 'alexpgates@gmail.com',
   }
 
   let feed = new Feed({
     title: author.name,
-    description: 'Your blog description',
+    description: 'Articles posted on alexpgates.com',
     author,
     id: siteUrl,
     link: siteUrl,
