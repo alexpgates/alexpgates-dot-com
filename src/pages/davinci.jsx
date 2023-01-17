@@ -39,7 +39,7 @@ export default function Davinci() {
         intro="Sort of unorganized (but improving) notes for my enrichment class"
       >
         <div className="space-y-20">
-        <SessionSection title="Session 3">
+
           <Session
               href="https://docs.google.com/presentation/d/1ZHE_6UidbS6v-bAV1n34eI2iF1k6vNoGKyjl5aufwpE/edit#slide=id.p"
               title="da Vinci’s Notebooks"
@@ -47,7 +47,15 @@ export default function Davinci() {
               cta="Google Slides"
            >
           </Session>
-        </SessionSection>
+
+          <Session
+              href="https://docs.google.com/presentation/d/15w6ppVk0bHA6R7tkXT2LqmiumYV2LC3Va77XkPTgej4/edit?usp=sharing"
+              title="Biomimicry"
+              description="The design and production of materials, structures, and systems that are modeled on biological entities and processes."
+              cta="Google Slides"
+           >
+          </Session>
+
         </div>
       </SimpleLayout>
     </>
