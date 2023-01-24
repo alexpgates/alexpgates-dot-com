@@ -163,11 +163,11 @@ function Resume() {
                   role.end.label ?? role.end
                 }`}
               >
-                <time dateTime={role.start.dateTime ?? role.start}>
+                <time className="dark:text-zinc-400" dateTime={role.start.dateTime ?? role.start}>
                   {role.start.label ?? role.start}
                 </time>{' '}
-                <span aria-hidden="true">—</span>{' '}
-                <time dateTime={role.end.dateTime ?? role.end}>
+                <span className="dark:text-zinc-400" aria-hidden="true">—</span>{' '}
+                <time className="dark:text-zinc-400" dateTime={role.end.dateTime ?? role.end}>
                   {role.end.label ?? role.end}
                 </time>
               </dd>
@@ -246,7 +246,7 @@ function Community() {
                 </dd>
                 <dt className="sr-only">Date</dt>
                 <dd
-                  className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
+                  className="ml-auto text-xs text-zinc-400 dark:text-zinc-400"
                   aria-label={`${org.start.label ?? org.start} until ${
                     org.end.label ?? org.end
                   }`}
