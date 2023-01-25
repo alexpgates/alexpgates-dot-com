@@ -56,6 +56,14 @@ export default function Davinci() {
            >
           </Session>
 
+          <Session
+              href="https://www.youtube.com/watch?v=USCBCmwMCDA"
+              title="How Computers Work: Binary and Data"
+              description="Learn about the binary counting system, how it compares to a decimal, and how it relates to how computers store information."
+              cta="YouTube"
+           >
+          </Session>
+
         </div>
       </SimpleLayout>
     </>
