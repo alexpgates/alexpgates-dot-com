@@ -46,7 +46,7 @@ export function Footer() {
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/articles">Articles</NavLink>
                 <NavLink href="/hire-me">Hire Me</NavLink>
-                <a onClick={toggleBaloo} className="transition cursor-pointer hover:text-cyan-500 dark:hover:text-cyan-400">Pspspspsp!</a>
+                <a onClick={toggleBaloo} className="transition cursor-pointer hover:text-cyan-500 dark:hover:text-cyan-400" tabindex="-1">Pspspspsp!</a>
               </div>
               <p className="text-sm text-zinc-400">
                 &copy; {new Date().getFullYear()} Alex P. Gates. All rights reserved.
