@@ -40,6 +40,13 @@ export default function Davinci() {
       >
         <div className="space-y-20">
 
+           <Session
+              href="https://docs.google.com/presentation/d/1N-lnnCJv0WpYCilb5b3dRepzlUmC9zWWOpAJtg4FA7w/edit?usp=sharing"
+              title="da Vinci’s Workshop: Introduction"
+              description="Who is da Vinci’s, when and where did he live? What did he do?"
+              cta="Google Slides"
+           >
+          </Session>
           <Session
               href="https://docs.google.com/presentation/d/1ZHE_6UidbS6v-bAV1n34eI2iF1k6vNoGKyjl5aufwpE/edit#slide=id.p"
               title="da Vinci’s Notebooks"
