@@ -72,10 +72,10 @@ export default function Davinci() {
           </Session>
 
           <Session
-              href=""
+              href="/articles/thousand-million-billion-trillion"
               title="Thousand Million Billion Trillion"
               description="Students learn about the relative sizes of commonly-heard numbers."
-              cta="Worksheet"
+              cta="Post"
            >
           </Session>
 
