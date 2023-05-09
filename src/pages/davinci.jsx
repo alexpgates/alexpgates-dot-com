@@ -71,6 +71,14 @@ export default function Davinci() {
            >
           </Session>
 
+          <Session
+              href=""
+              title="Thousand Million Billion Trillion"
+              description="Students learn about the relative sizes of commonly-heard numbers."
+              cta="Worksheet"
+           >
+          </Session>
+
         </div>
       </SimpleLayout>
     </>
