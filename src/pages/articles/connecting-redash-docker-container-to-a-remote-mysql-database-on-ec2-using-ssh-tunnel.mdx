@@ -12,7 +12,7 @@ export default (props) => <ArticleLayout meta={meta} {...props} />
 
 I've been experimenting with various Business Intelligence tools recently and wanted to try [Redash](https://redash.io/). I have a MySQL database on a Laravel Forge-provisioned server that I'd like to analyze using Redash. However, the server only allows connections via SSH, and Redash doesn't provide built-in SSH tunneling for MySQL connections. So, I had to do a few things to get this set up properly.
 
-#### Overview
+### Overview
 
 - Ensure the public key from the Redash EC2 instance is added to the remote MySQL server
 - Find the Docker host IP address on the Redash EC2 instance
@@ -87,7 +87,7 @@ sudo nano /etc/systemd/system/ssh-tunnel.service
 
 2. Add the following content to the service file:
 
-````
+```
 [Unit]
 Description=SSH tunnel service
 After=network.target
