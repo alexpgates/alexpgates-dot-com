@@ -10,7 +10,7 @@ export const meta = {
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-I've been experimenting with various Business Intelligence tools recently and wanted to try [Redash](https://redash.io/). I have a MySQL database on a Laravel Forge-provisioned server that I'd like to analyze using Redash. However, the server only allows connections via SSH, and Redash doesn't provide built-in SSH tunneling for MySQL connections. So, I had to do a few things to get this set up properly.
+I've been experimenting with various Business Intelligence tools recently and wanted to try [Redash](https://redash.io/). I have a MySQL database on a Laravel Forge-provisioned server that I'd like to use. However, the server only allows connections via SSH, and Redash doesn't provide built-in SSH tunneling for MySQL connections. So, I had to do a few things to get this set up properly.
 
 ### Overview
 
@@ -58,7 +58,7 @@ To verify the connection, run the following command:
 mysql -h 127.0.0.1 -P 3389 -u MYSQL_USER -p
 ```
 
-Replace "MYSQL_USER" with your MySQL username. You will be prompted to enter your MySQL password.
+Replace "MYSQL_USER" with your MySQL username. You will be prompted to enter your MySQL password. If you arrive at your remote server's MySql command prompt, the tunnel is working.
 
 
 ## Configure Redash's MySQL data source with the Docker host IP address and local port
