@@ -1,0 +1,49 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import Image from 'next/image'
+import screenshot from './npr-news-now.png'
+
+export const meta = {
+  author: 'Alex P. Gates',
+  date: '2024-01-25',
+  title: 'NPR News Now CLI',
+  description:
+    'Listen to the latest news right from your terminal.',
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+<Image src={screenshot} alt="npr-news-now-cli screenshot" />
+
+NPR publishes hourly news briefs called [NPR News Now](https://www.npr.org/podcasts/500005/npr-news-now) &mdash; _The latest news in five minutes. Updated hourly._
+
+The `npr-news-now-cli` package makes it easy to catch up on the latest news right from a terminal window. It works by parsing the podcast's RSS feed and playing the latest episode using VLC in the terminal.
+
+## Prerequisites
+
+Before you install and use `npr-news-now-cli`, you need to have VLC media player installed on your system as it relies on the VLC bindings for audio playback. Please follow the installation instructions on the [VLC official website](https://www.videolan.org/vlc/index.html).
+
+## Installation
+
+To install `npr-news-now-cli`, make sure you have Python and `pip` installed on your system, then run the following command:
+
+```bash
+pip install npr-news-now-cli
+```
+
+## Usage
+
+After installation, you can run the tool using the following command:
+
+```bash
+npr-news-now
+```
+
+To stop listening, use `ctrl+c` in your terminal. It will also quit when the clip is finished playing.
+
+## Contribute
+
+The code is available on GitHub: [alexpgates/npr-news-now-cli](https://github.com/alexpgates/npr-news-now-cli)
+
+## Disclaimer
+
+This tool is not officially affiliated with, authorized, maintained, sponsored, or endorsed by NPR (National Public Radio) or any of its affiliates or subsidiaries. This is an independent and unofficial project. Use at your own risk. The content accessed by this tool is subject to NPR's own terms of use.
