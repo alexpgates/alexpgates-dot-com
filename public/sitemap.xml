@@ -17,7 +17,12 @@
 <url>
   <loc>https://www.alexpgates.com/articles</loc>
   <lastmod>2023-01-14T14:29:57+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.1</priority>
+</url>
+<url>
+	<loc>https://www.alexpgates.com/articles/npr-news-now-cli</loc>
+	<lastmod>2024-01-26T22:58:13+01:00</lastmod>
+	<priority>0.85</priority>
 </url>
 <url>
   <loc>https://www.alexpgates.com/articles/connecting-redash-docker-container-to-a-remote-mysql-database-on-ec2-using-ssh-tunnel</loc>
@@ -30,18 +35,8 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.alexpgates.com/articles/how-computers-work</loc>
-  <lastmod>2023-01-26T13:49:57+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://www.alexpgates.com/articles/planetscale-and-laravel</loc>
   <lastmod>2023-01-14T14:29:57+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.alexpgates.com/articles/wordpress-custom-or-commercial-theme</loc>
-  <lastmod>2023-01-20T11:29:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -57,7 +52,7 @@
 <url>
   <loc>https://www.alexpgates.com/articles/how-to-walk-with-a-full-cup-of-coffee</loc>
   <lastmod>2023-01-14T14:29:57+00:00</lastmod>
-  <priority>0.64</priority>
+  <priority>0.8</priority>
 </url>
 
 
