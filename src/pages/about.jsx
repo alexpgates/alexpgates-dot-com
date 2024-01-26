@@ -53,13 +53,13 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2 prose">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Alex P. Gates. <span className="text-cyan-500">I live in Omaha</span> and work on the internet.
+              I&apos;m Alex P. Gates. <span className="text-cyan-500">I live in Omaha</span> and work on the internet.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
 
-            <p>I'm an experienced web and product developer specializing in rapid prototyping, ideation, launching, and scaling websites and SaaS applications.</p>
-            <p>I'm also a certified Raspberry Pi Educator and public school enrichment classroom teacher.</p>
-            <p>That's my dog, Nova.</p>
+            <p>I&apos;m an experienced web and product developer specializing in rapid prototyping, ideation, launching, and scaling websites and SaaS applications.</p>
+            <p>I&apos;m also a certified Raspberry Pi Educator and public school enrichment classroom teacher.</p>
+            <p>That&apos;s my dog, Nova.</p>
             </div>
           </div>
           <div className="lg:pl-20">
