@@ -45,8 +45,8 @@ export default function ArticlesIndex({ articles }) {
         />
       </Head>
       <SimpleLayout
-        title="Writing on software development, inspiring students, and problem solving."
-        intro="Some thoughts on programming, leadership, education, technology, and more, collected in chronological order."
+        title="Blog"
+        intro="It's short for 'web log', of course."
       >
         <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
           <div className="flex max-w-3xl flex-col space-y-16">

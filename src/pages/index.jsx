@@ -6,8 +6,6 @@ import clsx from 'clsx'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
-  TwitterIcon,
-  InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
@@ -49,6 +47,11 @@ function BriefcaseIcon(props) {
       />
     </svg>
   )
+}
+
+function toggleBaloo() {
+    document.getElementById('baloo-container').classList.toggle('invisible');
+    document.getElementById('sneaky-baloo').classList.toggle('top-0');
 }
 
 function CommunityIcon(props) {
@@ -312,19 +315,9 @@ export default function Home({ articles }) {
             Scrappy technologist, aspiring polymath, problem solver, and empathetic human.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Alex, a software developer, teacher, and entrepreneur based in Omaha, Nebraska. I build software to help good people do great things.
+            I’m Alex, an experienced web and product developer specializing in rapid prototyping, ideation, launching, and scaling websites and SaaS applications.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://twitter.com/alexpgates"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-            />
-            <SocialLink
-              href="https://instagram.com/alexpgates"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
             <SocialLink
               href="https://github.com/alexpgates"
               aria-label="Follow on GitHub"
@@ -335,6 +328,7 @@ export default function Home({ articles }) {
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
+            <a className="cursor-pointer" onClick={toggleBaloo}>😻</a>
           </div>
         </div>
       </Container>
