@@ -58,7 +58,7 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
 
             <p>I&apos;m an experienced web and product developer specializing in rapid prototyping, ideation, launching, and scaling websites and SaaS applications.</p>
-            <p>I&apos;m also a certified Raspberry Pi Educator and public school enrichment classroom teacher.</p>
+            <p>I&apos;m also a certified Raspberry Pi Educator and public school enrichment teacher.</p>
             <p>That&apos;s my dog, Nova.</p>
             </div>
           </div>
