@@ -29,7 +29,7 @@ export function ArticleLayout({
   if (isRssFeed) {
     return children
   }
-  const ogImageUrl = meta.ogImage || '/default-og-image.jpg';
+  const ogImageUrl = meta.ogImage || 'https://www.alexpgates.com/default-og-image.jpg';
 
   return (
     <>

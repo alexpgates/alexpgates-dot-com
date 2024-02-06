@@ -41,14 +41,14 @@ export default function Contact() {
           property="og:url"
           content={typeof window !== 'undefined' ? window.location.href : ''}
         />
-        <meta property="og:image" content="/default-og-image.jpg" />
+        <meta property="og:image" content="https://www.alexpgates.com/default-og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Alex P. Gates" />
         <meta
           name="twitter:description"
           content="Alex P. Gates is an experienced web and product developer specializing in rapid prototyping, ideation, launching, and scaling websites and SaaS applications."
         />
-        <meta name="twitter:image" content="/default-og-image.jpg" />
+        <meta name="twitter:image" content="https://www.alexpgates.com/default-og-image.jpg" />
       </Head>
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
