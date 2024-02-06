@@ -5,7 +5,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon, MailIcon } from '@/components/SocialIcons'
-import portraitImage from '@/images/nova.jpg'
+import portraitImage from '@/images/alex-p-gates-avatar.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -21,12 +21,12 @@ function SocialLink({ className, href, children, icon: Icon }) {
   )
 }
 
-export default function About() {
-  const ogImageUrl = '/images/default-og-image.jpg'
+export default function Contact() {
+
   return (
     <>
       <Head>
-        <title>About - Alex P. Gates</title>
+        <title>Contact - Alex P. Gates</title>
         <meta
           name="description"
           content="Alex P. Gates is an experienced web and product developer specializing in rapid prototyping, ideation, launching, and scaling websites and SaaS applications."
@@ -58,7 +58,7 @@ export default function About() {
                 src={portraitImage}
                 alt="Alex's Headshot"
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-square rounded-2xl bg-zinc-100 object-cover hover:rotate-3 dark:bg-zinc-800"
+                className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
           </div>
@@ -75,11 +75,6 @@ export default function About() {
                 and SaaS applications. I get super jazzed about helping good
                 people use custom software to do great things.
               </p>
-              <p>
-                I&apos;m also a certified Raspberry Pi Educator and public
-                school enrichment teacher.
-              </p>
-              <p>That&apos;s my dog, Nova.</p>
             </div>
           </div>
           <div className="lg:pl-20">

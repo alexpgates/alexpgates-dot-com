@@ -1,0 +1,42 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Alex P. Gates',
+  date: '2024-02-06',
+  title: 'Why Now Is the Perfect Time to Switch to Cloudflare',
+  description:
+    'February\'s DMARC requirements are just the beginning – why switching to Cloudflare is a smart, future-proof move for your email security and DNS management.',
+  intendedAudience: 'Hyperlocal bloggers and content publishers who typically rely on external help for DNS or server/security issues and seek straightforward, easy-to-understand guidance.',
+}
+
+
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+February 2024 marked a shift in email security and deliverability standards, particularly for Gmail and Yahoo users.
+
+To get ready, newsletter publishers dutifully added one or more new DNS records by following step-by-step instructions provided by email providers, and then eagerly awaited that reassuring green checkmark signaling success.
+
+Things _seem_ okay now &mdash; but many are now starting to receive "Report Domain" and "Report-ID" emails with strange cryptic attachments. What are those all about?
+
+##  Properly handling DMARC reports
+
+Those strange emails with attached XML files are sent to the email address listed in your DMARC record's `rua`attribute. They contain valuable insight on whether or not your emails are being delivered properly. This information is meant to be used to inform your DMARC policy, ensure your SPF and DKIM records are set up properly, and sniff out spammers and scammers attempting to send email "from" your domain name. Allowing them to pile up in your inbox isn't helpful, at all.
+
+Instead, I recommend using [Cloudflare's DMARC Management](https://developers.cloudflare.com/dmarc-management/) tool. This feature is available on all Cloudflare DNS plans, _including their free tier_. 🎉
+
+With this setup, Cloudflare will receive and aggregate your DMARC reports, allowing you to identify all the sources sending emails on your behalf and spot any bad behavior. You can use this insight to tighten your DMARC policy once you're sure your _legitimate_ email is passing properly.
+
+**Timing is important.** Specifically instructing email service providers to `quarantine` (mark as spam) or `reject` (don't deliver it at all) any email that doesn't pass your SPF and DKIM will significantly reduce the risk of phishing or spoofing attacks using your domain name, which helps protect your brand and your ability to send legitimate email successfully. **But doing this blindly without insight on how the SPF and DKIM checks are performing may lead you to inadvertently route your newsletters to spam folders, or cause them to not arrive at all.**
+
+##  I&apos;ll need _another_ DNS update?
+
+Well, yeah. But we just did this, so wrangling DNS is fresh in our minds.
+
+Cloudflare makes it easy to import your existing DNS records and provides you with nameservers to use with your registrar. From there, you can enable DMARC Management and adjust your DMARC record to make sure reports are sent to Cloudflare instead of your personal inbox. After a few hours you'll start to see reports flowing to Cloudflare, and after a few weeks you should have the insight you need in order to responsibly tighten up your DMARC policy to protect your brand and email sending reputation.
+
+As an added bonus, managing your DNS on Cloudflare unlocks a whole bunch of other fantastic performance and security benefits like their CDN, caching, SSL certificates, and protection from targeted attacks. It also makes future DNS updates a much better experience &mdash; something both you and your developer friends will be grateful for whenever you may need to update DNS again in the future.
+
+##  I&apos;m happy to help!
+
+If you get stuck or want extra reassurance, please [get in touch](/contact). I work with individuals, teams, and business of all sizes and am happy to help remove stress and uncertainty so you can focus on the things you care about.

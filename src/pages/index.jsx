@@ -5,10 +5,7 @@ import clsx from 'clsx'
 
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  LinkedInIcon,
-} from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -50,28 +47,28 @@ function BriefcaseIcon(props) {
 }
 
 function toggleBaloo() {
-    document.getElementById('baloo-container').classList.toggle('invisible');
-    document.getElementById('sneaky-baloo').classList.toggle('top-0');
+  document.getElementById('baloo-container').classList.toggle('invisible')
+  document.getElementById('sneaky-baloo').classList.toggle('top-0')
 }
 
 function CommunityIcon(props) {
-    return (
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        aria-hidden="true"
-        {...props}
-      >
-        <path
-            d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"
-            className="stroke-zinc-400 dark:stroke-zinc-500"
-            />
-      </svg>
-    )
-  }
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"
+        className="stroke-zinc-400 dark:stroke-zinc-500"
+      />
+    </svg>
+  )
+}
 
 function Article({ article }) {
   return (
@@ -83,7 +80,6 @@ function Article({ article }) {
         {formatDate(article.date)}
       </Card.Eyebrow>
       <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
     </Card>
   )
 }
@@ -130,12 +126,12 @@ function Resume() {
       end: '2015',
     },
     {
-        company: 'What Cheer',
-        title: 'Partner / Web Developer',
-        logo: logoWhatCheer,
-        start: '2009',
-        end: '2013',
-      },
+      company: 'What Cheer',
+      title: 'Partner / Web Developer',
+      logo: logoWhatCheer,
+      start: '2009',
+      end: '2013',
+    },
   ]
 
   return (
@@ -166,11 +162,19 @@ function Resume() {
                   role.end.label ?? role.end
                 }`}
               >
-                <time className="dark:text-zinc-400" dateTime={role.start.dateTime ?? role.start}>
+                <time
+                  className="dark:text-zinc-400"
+                  dateTime={role.start.dateTime ?? role.start}
+                >
                   {role.start.label ?? role.start}
                 </time>{' '}
-                <span className="dark:text-zinc-400" aria-hidden="true">—</span>{' '}
-                <time className="dark:text-zinc-400" dateTime={role.end.dateTime ?? role.end}>
+                <span className="dark:text-zinc-400" aria-hidden="true">
+                  —
+                </span>{' '}
+                <time
+                  className="dark:text-zinc-400"
+                  dateTime={role.end.dateTime ?? role.end}
+                >
                   {role.end.label ?? role.end}
                 </time>
               </dd>
@@ -183,92 +187,92 @@ function Resume() {
 }
 
 function Community() {
-    let organizations = [
+  let organizations = [
     {
-        name: 'Iowa Business Horizons',
-        title: 'Industry Advisor & Committee Chair',
-        logo: logoBh,
-        start: '2012',
-        end: {
-            label: 'Present',
-            dateTime: new Date().getFullYear(),
-            },
-        },
-      {
-        name: 'Wilson Focus School',
-        title: '3rd-6th grade Enrichment Teacher',
-        logo: logoWfs,
-        start: '2015',
-        end: {
-          label: 'Present',
-          dateTime: new Date().getFullYear(),
-        },
+      name: 'Iowa Business Horizons',
+      title: 'Industry Advisor & Committee Chair',
+      logo: logoBh,
+      start: '2012',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
       },
-      {
-        name: 'Iowa Association of Business and Industry Foundation',
-        title: 'Board Member',
-        logo: logoAbif,
-        start: '2021',
-        end: {
-            label: 'Present',
-            dateTime: new Date().getFullYear(),
-          },
+    },
+    {
+      name: 'Wilson Focus School',
+      title: '3rd-6th grade Enrichment Teacher',
+      logo: logoWfs,
+      start: '2015',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
       },
-      {
-        name: 'Raspberry Pi Educator',
-        title: 'Certified',
-        logo: logoRPi,
-        start: '2019',
-        end: {
-            label: 'Present',
-            dateTime: new Date().getFullYear(),
-          },
+    },
+    {
+      name: 'Iowa Association of Business and Industry Foundation',
+      title: 'Board Member',
+      logo: logoAbif,
+      start: '2021',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
       },
-    ]
+    },
+    {
+      name: 'Raspberry Pi Educator',
+      title: 'Certified',
+      logo: logoRPi,
+      start: '2019',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
+      },
+    },
+  ]
 
-    return (
-      <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-        <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-          <CommunityIcon className="h-6 w-6 flex-none" />
-          <span className="ml-3">Community</span>
-        </h2>
-        <ol className="mt-6 space-y-4">
-          {organizations.map((org, roleIndex) => (
-            <li key={roleIndex} className="flex gap-4">
-              <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                <Image src={org.logo} alt="" className="h-7 w-7" unoptimized />
-              </div>
-              <dl className="flex flex-auto flex-wrap gap-x-2">
-                <dt className="sr-only">Organization</dt>
-                <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                  {org.name}
-                </dd>
-                <dt className="sr-only">Role</dt>
-                <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-                  {org.title}
-                </dd>
-                <dt className="sr-only">Date</dt>
-                <dd
-                  className="ml-auto text-xs text-zinc-400 dark:text-zinc-400"
-                  aria-label={`${org.start.label ?? org.start} until ${
-                    org.end.label ?? org.end
-                  }`}
-                >
-                  <time dateTime={org.start.dateTime ?? org.start}>
-                    {org.start.label ?? org.start}
-                  </time>{' '}
-                  <span aria-hidden="true">—</span>{' '}
-                  <time dateTime={org.end.dateTime ?? org.end}>
-                    {org.end.label ?? org.end}
-                  </time>
-                </dd>
-              </dl>
-            </li>
-          ))}
-        </ol>
-      </div>
-    )
-  }
+  return (
+    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+        <CommunityIcon className="h-6 w-6 flex-none" />
+        <span className="ml-3">Community</span>
+      </h2>
+      <ol className="mt-6 space-y-4">
+        {organizations.map((org, roleIndex) => (
+          <li key={roleIndex} className="flex gap-4">
+            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+              <Image src={org.logo} alt="" className="h-7 w-7" unoptimized />
+            </div>
+            <dl className="flex flex-auto flex-wrap gap-x-2">
+              <dt className="sr-only">Organization</dt>
+              <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                {org.name}
+              </dd>
+              <dt className="sr-only">Role</dt>
+              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+                {org.title}
+              </dd>
+              <dt className="sr-only">Date</dt>
+              <dd
+                className="ml-auto text-xs text-zinc-400 dark:text-zinc-400"
+                aria-label={`${org.start.label ?? org.start} until ${
+                  org.end.label ?? org.end
+                }`}
+              >
+                <time dateTime={org.start.dateTime ?? org.start}>
+                  {org.start.label ?? org.start}
+                </time>{' '}
+                <span aria-hidden="true">—</span>{' '}
+                <time dateTime={org.end.dateTime ?? org.end}>
+                  {org.end.label ?? org.end}
+                </time>
+              </dd>
+            </dl>
+          </li>
+        ))}
+      </ol>
+    </div>
+  )
+}
 
 function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
@@ -298,24 +302,45 @@ function Photos() {
 }
 
 export default function Home({ articles }) {
+  const ogImageUrl = '/images/default-og-image.jpg'
   return (
     <>
       <Head>
         <title>
-          Alex P. Gates - Scrappy technologist, aspiring polymath, problem solver, empathetic human
+          Alex P. Gates
         </title>
         <meta
           name="description"
-          content="I’m Alex, a software developer, teacher, and entrepreneur based in Omaha, Nebraska. I build software to help good people do great things."
+          content="Alex P. Gates an experienced web and product developer specializing in rapid prototyping, ideation, launching, and scaling websites and SaaS applications."
         />
+        <meta property="og:title" content="Alex P. Gates" />
+        <meta
+          property="og:description"
+          content="Alex P. Gates is an experienced web and product developer specializing in rapid prototyping, ideation, launching, and scaling websites and SaaS applications."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={typeof window !== 'undefined' ? window.location.href : ''}
+        />
+        <meta property="og:image" content="/default-og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Alex P. Gates" />
+        <meta
+          name="twitter:description"
+          content="Alex P. Gates is an experienced web and product developer specializing in rapid prototyping, ideation, launching, and scaling websites and SaaS applications."
+        />
+        <meta name="twitter:image" content="/default-og-image.jpg" />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Scrappy technologist, aspiring polymath, problem solver, and empathetic human.
+          <h1 className="text-5xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-6xl lg:text-7xl">
+            Scrappy technologist &amp; aspiring polymath.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Alex, an experienced web and product developer specializing in rapid prototyping, ideation, launching, and scaling websites and SaaS applications.
+            Alex P. Gates is an experienced web and product developer specializing in
+            rapid prototyping, ideation, launching, and scaling websites and
+            SaaS applications.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -328,7 +353,9 @@ export default function Home({ articles }) {
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
-            <a className="cursor-pointer" onClick={toggleBaloo}>😻</a>
+            <a className="cursor-pointer" onClick={toggleBaloo}>
+              😻
+            </a>
           </div>
         </div>
       </Container>
@@ -339,6 +366,7 @@ export default function Home({ articles }) {
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
+            <Link href="/articles" className="text-sm font-medium text-cyan-500 hover:text-cyan-600">More Articles &raquo;</Link>
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Resume />
@@ -358,7 +386,7 @@ export async function getStaticProps() {
   return {
     props: {
       articles: (await getAllArticles())
-        .slice(0, 4)
+        .slice(0, 5)
         .map(({ component, ...meta }) => meta),
     },
   }

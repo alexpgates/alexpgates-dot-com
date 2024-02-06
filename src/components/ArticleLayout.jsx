@@ -29,12 +29,22 @@ export function ArticleLayout({
   if (isRssFeed) {
     return children
   }
+  const ogImageUrl = meta.ogImage || '/default-og-image.jpg';
 
   return (
     <>
       <Head>
         <title>{`${meta.title} - Alex P. Gates`}</title>
         <meta name="description" content={meta.description} />
+        <meta property="og:title" content={`${meta.title} - Alex P. Gates`} />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : ''} />
+        <meta property="og:image" content={ogImageUrl} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:description" content={meta.description} />
+        <meta name="twitter:image" content={ogImageUrl} />
       </Head>
       <Container className="mt-16 lg:mt-32">
         <div className="xl:relative">
@@ -61,6 +71,16 @@ export function ArticleLayout({
                   <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
                   <span className="ml-3">{formatDate(meta.date)}</span>
                 </time>
+                {meta.description && (
+                  <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
+                    {meta.description}
+                  </p>
+                )}
+                {meta.intendedAudience && (
+                  <p className="mt-4 text-sm italic text-zinc-500 dark:text-zinc-400">
+                    Intended Audience: {meta.intendedAudience}
+                  </p>
+                )}
               </header>
               <Prose className="mt-8">{children}</Prose>
             </article>

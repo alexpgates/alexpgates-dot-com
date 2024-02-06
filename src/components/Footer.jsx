@@ -45,6 +45,7 @@ export function Footer() {
               <div className="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/articles">Blog</NavLink>
+                <NavLink href="/contact">Contact</NavLink>
                 <span onClick={toggleBaloo} className="transition cursor-pointer hover:text-cyan-500 dark:hover:text-cyan-400" tabIndex="-1">Pspspspsp!</span>
               </div>
               <p className="text-sm text-zinc-400">
