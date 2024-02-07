@@ -48,7 +48,7 @@ export function Footer() {
                 <NavLink href="/contact">Contact</NavLink>
                 <span onClick={toggleBaloo} className="transition cursor-pointer hover:text-cyan-500 dark:hover:text-cyan-400" tabIndex="-1">Pspspspsp!</span>
               </div>
-              <p className="text-sm text-zinc-400">
+              <p className="text-sm text-zinc-500 dark:text-zinc-400">
                 &copy; {new Date().getFullYear()} Alex P. Gates. All rights reserved.
               </p>
             </div>
