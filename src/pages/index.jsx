@@ -157,7 +157,7 @@ function Resume() {
               </dd>
               <dt className="sr-only">Date</dt>
               <dd
-                className="ml-auto text-xs text-zinc-400 dark:text-zinc-300"
+                className="ml-auto text-xs text-zinc-500 dark:text-zinc-300"
                 aria-label={`${role.start.label ?? role.start} until ${
                   role.end.label ?? role.end
                 }`}
@@ -253,7 +253,7 @@ function Community() {
               </dd>
               <dt className="sr-only">Date</dt>
               <dd
-                className="ml-auto text-xs text-zinc-400 dark:text-zinc-400"
+                className="ml-auto text-xs text-zinc-500 dark:text-zinc-400"
                 aria-label={`${org.start.label ?? org.start} until ${
                   org.end.label ?? org.end
                 }`}
@@ -352,9 +352,9 @@ export default function Home({ articles }) {
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
-            <a className="cursor-pointer" onClick={toggleBaloo}>
+            <button className="cursor-pointer" onClick={toggleBaloo}>
               😻
-            </a>
+            </button>
           </div>
         </div>
       </Container>
@@ -365,7 +365,7 @@ export default function Home({ articles }) {
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
-            <Link href="/articles" className="text-sm font-medium text-cyan-500 hover:text-cyan-600">More Articles &raquo;</Link>
+            <Link href="/articles" className="text-sm font-medium text-cyan-700 hover:text-cyan-800">More Articles &raquo;</Link>
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Resume />
