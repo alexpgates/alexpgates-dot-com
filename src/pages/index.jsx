@@ -365,7 +365,7 @@ export default function Home({ articles }) {
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
-            <Link href="/articles" className="text-sm font-medium text-cyan-700 hover:text-cyan-800">More Articles &raquo;</Link>
+            <Link href="/articles" className="text-sm font-medium text-cyan-700 hover:text-cyan-800 dark:text-cyan-400">More Articles &raquo;</Link>
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Resume />
