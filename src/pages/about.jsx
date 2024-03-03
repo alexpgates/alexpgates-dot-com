@@ -53,7 +53,7 @@ export default function About() {
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square rounded-2xl bg-zinc-100 object-cover hover:rotate-3 dark:bg-zinc-800"
               />
-              <div className="md:text-center block mt-2 text-sm text-zinc-600 dark:text-zinc-400">That's my dog, Nova.</div>
+              <div className="md:text-center block mt-2 text-sm text-zinc-600 dark:text-zinc-400">That&apos;s my dog, Nova.</div>
             </div>
 
           </div>
@@ -70,12 +70,12 @@ export default function About() {
                 and SaaS applications.
               </p>
               <p>
-                I&apos;m a <Link href="https://www.raspberrypi.org/training/rce/">Raspberry Pi Certified Educator</Link> and teach STEAM-focused afternoon enrichment classes for elementary students. I'm also Chair of the <Link href="https://www.iowaabi.org/business-horizons/">Iowa Business Horizons</Link> committee, a week-long summer program  for high school students interested in business and entrepreneurship.
+                I&apos;m a <Link href="https://www.raspberrypi.org/training/rce/">Raspberry Pi Certified Educator</Link> and teach STEAM-focused afternoon enrichment classes for elementary students. I&apos;m also Chair of the <Link href="https://www.iowaabi.org/business-horizons/">Iowa Business Horizons</Link> committee, a week-long summer program for high school students interested in business and entrepreneurship.
               </p>
             </div>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                 <p>
-                    I work in a tiny 8'x8' shed next to my house. It used to be where I kept my lawnmower in the winter and snowblower in the summer.
+                    I work in a tiny 8&apos;x8&apos; shed next to my house. It used to be where I kept my lawnmower in the winter and snowblower in the summer.
                 </p>
                 <div className="grid grid-cols-1 gap-4">
                     <Image src={shed1Image} alt="Shed 1" className="rounded-lg" />
