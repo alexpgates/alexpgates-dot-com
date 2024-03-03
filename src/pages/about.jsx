@@ -5,21 +5,15 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { GitHubIcon, LinkedInIcon, MailIcon } from '@/components/SocialIcons'
-import portraitImage from '@/images/nova.jpg'
+import novaImage from '@/images/nova.jpg'
+import shed1Image from '@/images/photos/shed/1.jpg'
+import shed2Image from '@/images/photos/shed/2.jpg'
+import shed3Image from '@/images/photos/shed/3.jpg'
+import shed4Image from '@/images/photos/shed/4.jpg'
+import shed5Image from '@/images/photos/shed/5.jpg'
+import shed6Image from '@/images/photos/shed/6.jpg'
+import shed7Image from '@/images/photos/shed/7.jpg'
 
-function SocialLink({ className, href, children, icon: Icon }) {
-  return (
-    <li className={clsx(className, 'flex')}>
-      <Link
-        href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-cyan-500 dark:text-zinc-200 dark:hover:text-cyan-500"
-      >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-cyan-500" />
-        <span className="ml-4">{children}</span>
-      </Link>
-    </li>
-  )
-}
 
 export default function About() {
   return (
@@ -54,12 +48,14 @@ export default function About() {
           <div className="lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <Image
-                src={portraitImage}
-                alt="Alex's Headshot"
+                src={novaImage}
+                alt="Alex and Nova"
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square rounded-2xl bg-zinc-100 object-cover hover:rotate-3 dark:bg-zinc-800"
               />
+              <div className="md:text-center block mt-2 text-sm text-zinc-600 dark:text-zinc-400">That's my dog, Nova.</div>
             </div>
+
           </div>
           <div className="prose lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
@@ -70,41 +66,27 @@ export default function About() {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 I&apos;m an experienced web and product developer specializing
-                in rapid prototyping, ideation, launching, and scaling websites
-                and SaaS applications. I get super jazzed about helping good
-                people use custom software to do great things.
+                in validating, prototyping, launching, and scaling websites
+                and SaaS applications.
               </p>
               <p>
-                I&apos;m also a certified Raspberry Pi Educator and public
-                school enrichment teacher.
+                I&apos;m a <Link href="https://www.raspberrypi.org/training/rce/">Raspberry Pi Certified Educator</Link> and teach STEAM-focused afternoon enrichment classes for elementary students. I'm also Chair of the <Link href="https://www.iowaabi.org/business-horizons/">Iowa Business Horizons</Link> committee, a week-long summer program  for high school students interested in business and entrepreneurship.
               </p>
-              <p>That&apos;s my dog, Nova.</p>
             </div>
-          </div>
-          <div className="lg:pl-20">
-            <ul role="list">
-              <SocialLink
-                href="https://github.com/alexpgates"
-                icon={GitHubIcon}
-                className="mt-4"
-              >
-                GitHub
-              </SocialLink>
-              <SocialLink
-                href="https://linkedin.com/in/alexpgates"
-                icon={LinkedInIcon}
-                className="mt-4"
-              >
-                LinkedIn
-              </SocialLink>
-              <SocialLink
-                href="mailto:alexpgates@gmail.com"
-                icon={MailIcon}
-                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
-              >
-                alexpgates@gmail.com
-              </SocialLink>
-            </ul>
+            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+                <p>
+                    I work in a tiny 8'x8' shed next to my house. It used to be where I kept my lawnmower in the winter and snowblower in the summer.
+                </p>
+                <div className="grid grid-cols-1 gap-4">
+                    <Image src={shed1Image} alt="Shed 1" className="rounded-lg" />
+                    <Image src={shed2Image} alt="Shed 2" className="rounded-lg" />
+                    <Image src={shed3Image} alt="Shed 3" className="rounded-lg" />
+                    <Image src={shed4Image} alt="Shed 4" className="rounded-lg" />
+                    <Image src={shed5Image} alt="Shed 5" className="rounded-lg" />
+                    <Image src={shed6Image} alt="Shed 6" className="rounded-lg" />
+                    <Image src={shed7Image} alt="Shed 7" className="rounded-lg" />
+                </div>
+            </div>
           </div>
         </div>
       </Container>
